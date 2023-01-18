@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.conatainer {
+    margin: 50px auto;
+    max-width: 600px;
+    border: 3px dotted #333;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    
+}
+
+.product-title {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.title-count, .title-total, .total-count {
+    text-align: center;
+    padding: 5px;
+}
+
+.summary {
+    min-width: 250px;
+}
+
+.price, .count {
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.input {
+    max-width: 50px;
+    height: 25px;
+    margin-left: 15px;
+}
+
+.plus, .minus {
+    width: 45px;
+    height: 25px;
+    margin: 0 10px ;
+}
+
