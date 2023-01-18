@@ -6,6 +6,8 @@ let minus = document.querySelector('.minus');
 
 //Functions
 
+//Функція множення кількості та ціни
+
 function multiply () {
     if (productCount.innerHTML > 0) {
         totalCount.innerHTML = value * productCount.innerHTML;
@@ -13,6 +15,8 @@ function multiply () {
         totalCount.innerHTML = 0;
     }
 }
+
+//Функція віднімання кількості 
 
 function subtraction () {
     if (productCount.innerHTML > 0) {
@@ -22,7 +26,9 @@ function subtraction () {
     }
 }
 
-let value;
+//Функція що не пропускає літери до поля вводу та приймає значення вводу
+
+let value; 
 
 const changeHandler = e => {
     value = e.value;
@@ -30,12 +36,14 @@ const changeHandler = e => {
     console.log(value);
 }
 
-//
+// Додавання за кліком
 
 plus.addEventListener('click', ()=> {
     productCount.innerHTML = +productCount.innerHTML + 1;
     multiply ();
 })
+
+// Віднімання за кліком
 
 minus.addEventListener('click', ()=> {
     if (productCount.innerHTML > 0) {
