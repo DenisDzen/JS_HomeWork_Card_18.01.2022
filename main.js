@@ -7,22 +7,14 @@ let minus = document.querySelector('.minus');
 //Functions
 
 function multiply () {
-    if (productCount.innerHTML > 0) {
         totalCount.innerHTML = value * productCount.innerHTML;
-    } else {
-        totalCount.innerHTML = 0;
-    }
 }
 
 function subtraction () {
-    if (productCount.innerHTML > 0) {
         totalCount.innerHTML = totalCount.innerHTML - value;
-    } else {
-        totalCount.innerHTML = 0;
-    }
 }
 
-let value;
+let value = 0;
 
 const changeHandler = e => {
     value = e.value;
